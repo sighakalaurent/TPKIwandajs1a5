@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercice4</title>
+
+    <script>
+        function calculcarrenombre(){
+            nombre= Number(document.getElementById("nombre").value)
+            carrenombre= nombre*nombre
+            document.getElementById("valeur").innerHTML ="Le carre de votre nombre est: "+ carrenombre  ;
+        }
+    </script>
+</head>
+
+<body>
+    <p>Calculons le carre d'un nombre .</p>
+    <p>Entrez votre nombre: <input id="nombre"></p>
+    <button onclick="calculcarrenombre()">voire</button>
+    <p></p><div id="valeur"> </div>    
+
+</body>
+</html>
