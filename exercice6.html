@@ -1,45 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice6.1</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>exercice6</title>
-    <head>
-        <script>
-            function nombjour() {
 
-                m = Number(document.getElementById("nbr1").value)
-        a= Number(document.getElementById("nbr2").value)
+    <script>
 
-            switch (m) {
-                case 1:
-            case 3:
-            case 5:
-            case 7:
-            case 8:
-            case 12:
-            j = 31;
-            break;
-            case 4:
-            case 6:
-            case 9:
-            case 11:
-            j = 30; break;
-            case 2:
-            if (a % 4 == 0)
-            j = 29; else j = 28; break;
-            }
-            document.getElementById("nomjou").value = j
+        let nb1 = 2;
+        let nb2 = 3;
+        let nb3 = 2;
+
+        if (nb1 == nb2 && nb2 == nb3) {
+            console.log("Les 3 variables sont identiques.")
         }
-</script>
+        else {
+            if (nb2 == nb3 || nb1 == nb3 || nb1 == nb2) {
+                console.log("2 des variables sont de valeurs égales.");
+            }
+
+            else {
+                console.log("Les 3 variables sont différentes.");
+            }
+        }
+        
+    </script>
 </head>
 
 <body>
-    <p>Entrer le premier nombre: <input id="nbr1" placeholder="DC1"> </p>
-    <p>Entrer le deuxieme nombre: <input id="nbr2" placeholder="DC2"></p>
-    <button onclick="nombjour()">Valeurmoyent</button>
-    <input id="nomjou"> 
+   
 </body>
 
 </html>
