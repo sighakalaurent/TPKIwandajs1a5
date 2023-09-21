@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>exercice3</title>
+
+    <script>
+        function Tabledemultiplication(a, b, m) {
+            a = Number(document.getElementById("a").value)
+            b = Number(document.getElementById("b").value)
+            for (a = 1; a < 11; a++) {
+
+                m = a * b;
+            }
+
+            document.getElementById('mul').value = m
+        }
+    </script>
+</head>
+
+<body>
+    <p> Entre le premier nombre:<input id="a"></p>
+    <p> Entre le deuxieme nombre:<input id="b">
+    </p>
+    <button onclick="Tabledemultiplication()"> multiplication</button>
+    <input id="mul">
+</body>
+
+</html>
