@@ -1,0 +1,42 @@
+<!-- Pour ce premier exercice, il est demandé de déclarer et définir trois variables numériques.
+Si elles sont égales, écrire : « Les trois variables sont identiques. »
+Si seulement deux sont identiques, écrire : « deux des variables sont de valeurs égales. »
+Sinon, écrire : « Les trois variables sont différentes. » -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice5</title>
+
+
+    <script>
+
+        let nb1 = 2;
+        let nb2 = 3;
+        let nb3 = 2;
+
+        if (nb1 == nb2 && nb2 == nb3) {
+            console.log("Les 3 variables sont identiques.")
+        }
+        else {
+            if (nb2 == nb3 || nb1 == nb3 || nb1 == nb2) {
+                console.log("2 des variables sont de valeurs égales.");
+            }
+
+            else {
+                console.log("Les 3 variables sont différentes.");
+            }
+        }
+        
+    </script>
+</head>
+
+<body>
+   
+</body>
+
+</html>
