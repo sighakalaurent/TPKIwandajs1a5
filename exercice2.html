@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>exercice3</title>
 
-    <script>
-        function Tabledemultiplication() {
-            const nombre = Number(document.getElementById("nombr").value)
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>exercice2</title>
+    <head>
+        <script>
+            function nombjour() {
 
-            for (let i = 1; i < 11; i++) {
-                m = nombre * i;
-                document.getElementById("mul").innerHTML+=`${nombre} *${i} = ${m}<br/>
+                m = Number(document.getElementById("nbr1").value)
+        a= Number(document.getElementById("nbr2").value)
 
+            switch (m) {
+                case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 12:
+            j = 31;
+            break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+            j = 30; break;
+            case 2:
+            if (a % 4 == 0)
+            j = 29; else j = 28; break;
             }
+            document.getElementById("nomjou").value = j
         }
-
-
-    </script>
+</script>
 </head>
 
 <body>
-    <p> Entre le premier nombre:<input id="nombr"></p>
-    </p>
-    <button onclick="Tabledemultiplication()"> multiplication</button>
-    <div id="mul"></div>
-
+    <p>Entrer le premier nombre: <input id="nbr1" placeholder="DC1"> </p>
+    <p>Entrer le deuxieme nombre: <input id="nbr2" placeholder="DC2"></p>
+    <button onclick="nombjour()">nombredejour</button>
+    <input id="nomjou"> 
 </body>
 
 </html>
